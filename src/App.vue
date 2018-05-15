@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <productlist></productlist>
+    <ProductList/>
+    <hr>
+    <ShoppingCart/>
   </div>
 </template>
 
 <script>
-import productlist from './components/productlist';
+import ProductList from './components/productlist';
+import ShoppingCart from './components/ShoppingCart';
 
 export default {
   name: 'App',
   components: {
-    productlist,
+    ProductList,
+    ShoppingCart
   },
 };
 </script>
